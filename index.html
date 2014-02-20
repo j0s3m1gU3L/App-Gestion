@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Prototipo BIGestor Móvil</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="jqm/jquery.mobile.css">
+	
+	<script src="js/jquery.js"></script>
+	<script src="jqm/jquery.mobile.js"></script>
+
+</head>
+<body>
+	<div data-role="page" data-theme="a" id="login" role="main">
+		<div data-role="header" data-theme="b">
+			<h1>BI Gestor Móvil</h1>
+		</div>
+		<div data-role="content">
+			
+			<label for="basic">Usuario</label>
+			<input type="text" name="name" id="basic" data-mini="true"/>	
+
+			<label for="basic">Contraseña</label> 
+			<input type="password" name="name" id="basic" data-mini="true"/> 
+			<br>
+			<br>
+			<a href="#opciones" data-role="button" data-theme="b" data-transition="flip">Ingresar</a>
+		</div>
+
+	</div>
+
+	<div data-role="page" data-theme="a" id="opciones">
+		<div data-role="header" data-theme="b">
+			
+			<h1>BI Gestor Móvil</h1>
+		</div>
+		<div data-role="content">
+			<h2>Menú General</h2>
+			<ul data-role="listview" data-inset="true">
+				<li><a href="cajas_dia.html" data-transition="slide">Cajas del Día</a></li>
+				<li><a href="cajas_mes.html" data-transition="slide">Cajas del Mes</a></li>
+				<!-- <li><a href="#ventas" data-transition="slide">Ventas del Día</a></li> -->
+				<!-- <li><a href="#ventas" data-transition="slide">Ventas del Mes</a></li> -->
+				<li><a href="articulos_vendidos.html" data-transition="slide">Artículos Vendidos</a></li>
+				<li><a href="reorden.html" data-transition="slide">Articulos por pedir</a></li>
+				<li><a href="anuladas.html" data-transition="slide">Facturas anuladas</a></li>
+				<li><a href="#ventas" data-transition="slide">Facturas con descuentos</a></li>
+				<li><a href="#ventas" data-transition="slide">Comparativo Mensual</a></li>
+				<!-- <li><a href="#ventas" data-transition="slide">Comparativo por Fecha</a></li> -->
+				<li><a href="#ventas" data-transition="slide">Cuentas por Cobrar</a></li>
+				<!-- <li><a href="#ventas" data-transition="slide">Cuentas Pagar</a></li> -->
+				<li><a href="#ventas" data-transition="slide">Valor de inventario</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div data-role="page" data-theme="a" id="tienda">
+		<div data-role="header" data-theme="b">
+			<a href="#opciones" data-icon="arrow-l" data-inline="true" data-mini="true" data-rel="back"> Volver</a>
+			<h1>BI Gestor Móvil</h1>
+		</div>
+		<div data-role="content">
+			<h3>Stampa Paseo de las Flores</h3>
+			<h3>Total del día: ¢ 1.234.100,00 </h3>
+			<hr>
+			<p><strong>Apertura de caja</strong> 10:40 a.m.</p>
+			<p><strong>Efectivo:</strong> ¢ 320.000,00</p>
+			<p><strong>Tarjetas:</strong> ¢ 914.100,00</p>
+
+			
+			
+
+		</div>
+
+	</div>
+
+
+
+
+
+</body>
+</html>
